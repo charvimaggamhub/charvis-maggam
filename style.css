@@ -236,84 +236,26 @@ button:hover{
 
 /* ================= ADMIN LOGIN ================= */
 .admin-bg{
-  background: linear-gradient(135deg,#b76e79,#f7e7ea);
+  background:linear-gradient(135deg,#b76e79,#f7e7ea);
   min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login-wrapper{
   width:100%;
-  max-width:420px;
   padding:20px;
 }
 
 .login-card{
   background:white;
-  padding:40px 35px;
-  border-radius:18px;
+  padding:35px;
+  border-radius:16px;
   text-align:center;
-  box-shadow:0 15px 40px rgba(0,0,0,0.15);
-  transition:0.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-.login-card:hover{
-  transform: translateY(-3px);
-}
-
-/* Logo */
-.login-logo{
-  width:90px;
-  margin-bottom:10px;
-}
-
-/* Title */
-.login-title{
-  font-size:26px;
-  font-weight:600;
-  margin-bottom:25px;
-  color:#333;
-}
-
-/* Inputs */
-.login-input{
-  width:100%;
-  padding:12px 14px;
-  margin:10px 0;
-  border-radius:8px;
-  border:1px solid #ddd;
-  font-size:15px;
-  transition:0.3s;
-}
-
-.login-input:focus{
-  border-color:#b76e79;
-  outline:none;
-  box-shadow:0 0 0 3px rgba(183,110,121,0.2);
-}
-
-/* Button */
-.login-btn{
-  width:100%;
-  padding:12px;
-  margin-top:15px;
-  border:none;
-  border-radius:8px;
-  background:#b76e79;
-  color:white;
-  font-size:16px;
-  font-weight:600;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.login-btn:hover{
-  background:#9c5661;
-}
-
-/* Error */
 .error-text{
   color:red;
   font-size:14px;
@@ -850,7 +792,7 @@ body.admin-page {
   left:0;
   width:100%;
   height:100vh;
-  background:linear-gradient(135deg,#f7e7ea,#f1eced);
+  background:linear-gradient(135deg,#f7e7ea,#f2c6d3);
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -862,14 +804,6 @@ body.admin-page {
 #splash-screen img{
   width:130px;
   margin-bottom:10px;
-}
-
-
-.splash-title{
-    font-size: 28px;
-    color: #0a8f6a;
-    font-weight: bold;
-    animation: fadeIn 2s ease;
 }
 
 /* Tagline */
@@ -909,19 +843,4 @@ body.admin-page {
 @keyframes stitchMove{
   0%{ left:0; }
   100%{ left:130px; }
-}
-
-
-.password-field{
-  position:relative;
-}
-
-.toggle-eye{
-  position:absolute;
-  right:15px;
-  top:50%;
-  transform:translateY(-50%);
-  cursor:pointer;
-  font-size:18px;
-  color:#666;
 }
