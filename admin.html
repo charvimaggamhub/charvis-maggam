@@ -19,26 +19,22 @@
 
 
 <!-- ================= LOGIN ================= -->
-<div class="admin-bg">
-  <div class="login-wrapper">
-    <div class="login-card">
+<div id="loginSection" class="login-wrapper">
 
-      <img src="logo.png" class="login-logo">
+<img src="logo.png" class="nav-logo">
 
-      <h2 class="login-title">Admin Login</h2>
+<div class="login-card">
 
-      <input type="text" placeholder="Username" class="login-input">
+<h2>Admin Login</h2>
 
-      <div class="password-field">
-  <input type="password" id="password" placeholder="Password" class="login-input">
-  <span class="toggle-eye" onclick="togglePassword()">👁</span>
+<input type="email" id="email" placeholder="Enter Email">
+<input type="password" id="password" placeholder="Enter Password">
+
+<button id="loginBtn">Login</button>
+
+<p id="loginMsg" class="error-text"></p>
+
 </div>
-      <button class="login-btn">Login</button>
-
-      <p class="error-text"></p>
-
-    </div>
-  </div>
 </div>
 
 
@@ -183,19 +179,6 @@ navigator.serviceWorker.register('service-worker.js')
 <script src="supabase.js"></script>
 <script src="admin.js"></script>
 
-
-
-<script>
-function togglePassword() {
-  const passwordInput = document.getElementById("password");
-
-  if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-  } else {
-      passwordInput.type = "password";
-  }
-}
-</script>
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <p class="footer-copy">
