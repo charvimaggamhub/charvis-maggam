@@ -20,7 +20,8 @@
 </head>
 
 <body>
-<div id="splash-screen">
+
+  <div id="splash-screen">
 
   <img src="icon-512.png" alt="Charvi's Maggam Hub">
   <h1 class="splash-title">Charvi's Maggam Hub</h1>
@@ -31,9 +32,6 @@
       <div class="thread"></div>
       <div class="needle"></div>
   </div>
-
-
-
 
 </div>
 
@@ -90,14 +88,6 @@ if ('serviceWorker' in navigator) {
 
 <script>
 window.addEventListener("load", function(){
-    setTimeout(function(){
-        document.getElementById("splash-screen").style.display = "none";
-    }, 2000);
-});
-</script>
-
-<script>
-window.addEventListener("load", function(){
 
   setTimeout(function(){
       document.getElementById("splash-screen").style.opacity="0";
@@ -108,6 +98,7 @@ window.addEventListener("load", function(){
 
 });
 </script>
+
 
 <footer class="footer">
 
